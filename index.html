@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+  <!DOCTYPE html>
 <html>
 
 <head>
@@ -41,6 +41,14 @@
           <option>Ujjain</option>
           <option>Dhar</option>
           <option>Mandsour</option>
+          <option>Jabalpur</option>
+          <option>Gwalior</option>
+          <option>Sagar</option>
+          <option>Rewa</option>
+          <option>Chambal</option>
+          <option>Panna</option>
+          <option>Guna</option>
+          <option>Ratlam</option>
         </select>
 
         <label>Select Blood Group</label>
@@ -56,7 +64,7 @@
           <option>AB-</option>
         </select>
         <label>Enter Pincode</label>
-        <input type="number" id="pin"required />
+        <input type="number" id="pin"   maxlength="6" oninput="this.value=this.value.slice(0,6)"   required/>
         <button type="button" onclick="find()">Find</button>
       </form>
       <button class="goback" onclick="goback()">back</button>
@@ -64,7 +72,22 @@
     <div id="adress2">
       <form >
         <label>Select District</label>
-        <input type="" id="a" />
+        <select id="a">
+          <option selected disabled >District</option>
+          <option>Dewas</option>
+          <option>Indor</option>
+          <option>Ujjain</option>
+          <option>Dhar</option>
+          <option>Mandsour</option>
+          <option>Jabalpur</option>
+          <option>Gwalior</option>
+          <option>Sagar</option>
+          <option>Rewa</option>
+          <option>Chambal</option>
+          <option>Panna</option>
+          <option>Guna</option>
+          <option>Ratlam</option>
+        </select>
         <label>Select Blood Group</label>
         <select id="b">
           <option selected disabled>Any group</option>
@@ -81,11 +104,12 @@
         <label>Name</label>
         <input type="text" id="c" />
         <label>Contact Number</label>
-        <input type="number" id="d" />
+        <input type="number" id="d" maxlength="10" oninput="this.value=this.value.slice(0,10) "/>
         <label>WhatsApp Number </label>
-        <input type="number" id="e" />
+        <input type="number" id="e" maxlength="10"oninput="this.value=this.value.slice(0,10)"/>
         <label>Enter Pincode</label>
-        <input type="number" id="f" />
+        <input type="number" id="f"
+        maxlength="6" oninput="this.value=this.value.slice(0,6)"/>
 
         <button type="button"onclick="data()">Register Me</button>
       </form>

@@ -1,4 +1,4 @@
-function buttonClick1() {
+ function buttonClick1() {
   let value = document.getElementById("card");
   value.style.display = "none";
   let adress = document.getElementById("adress");
@@ -18,14 +18,14 @@ function data() {
   let e = document.getElementById("e").value;
   let f = document.getElementById("f").value;
 
-  if (a == "" || b == "" || c == "" || d == "" || e == "" || f == "") {
-    alert("please fill input");
+  if (a == "District" || b == "Any group" || c == "" || d == "" || e == "" || f == "") {
+    alert("Please fill input");
     return false;
-  } else if (d.length < 10 || d.length > 10 || e.length < 10 || e.length > 10) {
-    alert("please enter 10 number");
+  }  
+  else if (d.length < 10 || d.length > 10 || e.length < 10 || e.length > 10) {
+    alert("Please enter 10 digit number");
     return false;
-  }
-  else{
+  }  else{
       let value3 = document.getElementById("body");
   value3.style.display = "none";
   let form = document.getElementById("form");
@@ -52,7 +52,7 @@ function find() {
  let bld=document.getElementById('bld').value;
  let pin=document.getElementById('pin').value;
  let nam=document.getElementById('nam').value;
- if (nam==""||dis==""||pin==""||bld=="") {
+ if (nam==""||dis=="District"||pin==""||bld=="Any group") {
    alert(`Please fill input`)
    return false;
  } else {
